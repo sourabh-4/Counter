@@ -1,0 +1,99 @@
+body{
+background-color: rgb(226, 226, 231);
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+h1{
+color: rgb(0, 0, 0);
+font-size: 60px;
+font-family: Verdana;
+text-align: center;
+}
+h3{
+color: green;
+font-size: 50px;
+text-align: center;
+}
+
+.buttons-c {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 10px 30px;
+  }
+}
+/* .buttons-c{
+    padding: 60px,90px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    border:calc(0.5px + 0.5vw) solid #fff;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.button:hover {
+    background-color: #2c7bb6; /* Background color change on hover */
+
+
+/* .button:active {
+    background-color: #ffcc00; /* Background color change when clicked (glow effect) */
+ 
+
+
+
+const count = document.getElementById('count');
+const decreaseBtn = document.getElementById('decrease');
+const resetBtn = document.getElementById('reset');
+const increaseBtn = document.getElementById('increase');
+
+// Initialize the counter
+let counter = 3;
+
+// Display the current counter value
+count.innerHTML = counter;
+
+// Add event listeners to the buttons
+decreaseBtn.addEventListener('click', () => {
+  counter--;
+  count.innerHTML = counter;
+});
+
+resetBtn.addEventListener('click', () => {
+  counter = 3;
+  count.innerHTML = counter;
+});
+
+increaseBtn.addEventListener('click', () => {
+  counter++;
+  count.innerHTML = counter;
+});
